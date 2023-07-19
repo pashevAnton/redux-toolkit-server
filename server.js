@@ -23,7 +23,6 @@ app.use(function(req, res, next) {
 })
 
 app.get('/posts', (req, res) => {
-    res.set({'Access-Control-Allow-Origin': '*'})
     res.send(data.posts)
 })
 
